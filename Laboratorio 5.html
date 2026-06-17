@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabla de Usuarios</title>
+
+<style>
+
+table{
+    width:700px;
+    border-collapse:collapse;
+    text-align:center;
+    font-family:Arial, sans-serif;
+}
+
+th{
+    background:lightblue;
+    color:purple;
+    padding:10px;
+}
+
+td{
+    padding:10px;
+    border:1px solid #ddd;
+}
+
+tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+.id{
+    background:lightblue;
+    color:purple;
+    font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<table>
+
+<tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Correo</th>
+    <th>Opciones</th>
+</tr>
+
+<tr>
+    <td class="id">14785632</td>
+    <td>Juan</td>
+    <td>Martinez</td>
+    <td>juanmartinez@gmail.com</td>
+    <td>><input type="radio" name="tetra" value="1ro" id="1ro">
+        <p>1ro</p>
+        <input type="radio" name="tetra" value="2do" id="2do"> 
+        <p>2do</p>
+        <input type="radio" name="tetra" value="3ro" id="3ro">
+        <p>3ro</p>
+    </td>
+</tr>
+
+<tr>
+    <td class="id">58461332</td>
+    <td>Diego</td>
+    <td>Castro</td>
+    <td>diegocastro@gmail.com</td>
+    <td><select>
+        <option value="1ro">1ro</option>
+        <option value="2do">2do</option>
+        <option value="3ro">3ro</option>
+    </select></td>
+</tr>
+
+<tr>
+    <td class="id">34752559</td> 
+    <td>Jose</td>
+    <td>Lopez</td>
+    <td>joselopez@gmail.com</td>
+    <td><input type="checkbox" value="1ro" id="1ro">
+        <label for="1ro">1ro</label>
+        <input type="checkbox" value="2do" id="2do">
+        <label for="2do">2do</label>
+        <input type="checkbox" value="3ro" id="3ro">
+        <label for="3ro">3ro</label>
+    </td>
+</tr>
+
+<tr>
+    <td class="id">78462164</td>
+    <td>Hernan</td>
+    <td>Diaz</td>
+    <td>hernandiaz@gmail.com</td>
+    <td><input type="checkbox" value="1ro" id="1ro">
+        <label for="1ro">1ro</label>
+        <input type="checkbox" value="2do" id="2do">
+        <label for="2do">2do</label>
+        <input type="checkbox" value="3ro" id="3ro">
+        <label for="3ro">3ro</label>
+    </td>
+</tr>  
+
+<tr>
+    <td class="id">55896273</td>
+    <td>John</td>
+    <td>Smith</td>
+    <td>johnsmith@gmail.com</td>
+    <td><select>
+        <option value="1ro">1ro</option>
+        <option value="2do">2do</option>
+        <option value="3ro">3ro</option>
+    </select></td>
+</tr>
+
+<tr>
+    <td><input type="text" class="id" value="12345678"></td>
+    <td><input type="text" value="Nombre"></td>
+    <td><input type="text" value="Apellido"></td>
+    <td><input type="email" value="correo@gmail.com"></td>
+</tr>
+
+        <form action="" method="post">
+            <tr>
+                <td><input type="text" class="id" name="id" placeholder="ID"></td>
+                <td><input type="text" name="nombre" placeholder="Nombre"></td>
+                <td><input type="text" name="apellido" placeholder="Apellido"></td>
+                <td><input type="email" name="correo" placeholder="Correo"></td>
+                <td><button type="submit">Guardar</button></td>
+            </tr>
+
+</table>
+
+</body>
+</html>
